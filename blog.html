@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="global.css"/>
+  <link rel="stylesheet" href="headerFooter/header.css"/>
+  <link rel="stylesheet" href="headerFooter/footer.css"/>
+  <link rel="stylesheet" href="blog/blog.css"/>
+
+  <title>Blog | Ghanshyam Joshi</title>
+</head>
+<body>
+  <div id="header"></div>
+  <section class="blog">
+    <div class="container">
+      <h2>Thoughts & Reflections</h2>
+      <p class="blog-subtitle">
+        Sharing my journey in tech, security, and personal growth
+      </p>
+
+      <div class="blog-stats">
+        <div class="stat-item">
+          <span class="number">1</span>
+          <span>Articles Published</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">3</span>
+          <span>Topics Covered</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">Coming Soon</span>
+          <span>New Content</span>
+        </div>
+      </div>
+
+      <div class="filter-tags">
+        <div class="filter-tag active">All Posts</div>
+        <div class="filter-tag">QA & Testing</div>
+        <div class="filter-tag">Data Engineering</div>
+        <div class="filter-tag">Security</div>
+        <div class="filter-tag">Personal Growth</div>
+        <div class="filter-tag">Mindfulness</div>
+      </div>
+
+      <div class="blog-list">
+        <article onclick="window.location.href='myFirstVipassana.html'">
+          <div class="blog-header">
+            <div>
+              <h3><a href="myFirstVipassana.html">My 10 Day Vipassana Experience: A Journey Within</a></h3>
+              <div class="blog-meta">
+                <span class="meta-item"><i class="fas fa-calendar-alt"></i> October 2025</span>
+                <span class="meta-item"><i class="fas fa-clock"></i> 5 min read</span>
+              </div>
+            </div>
+          </div>
+          <p class="blog-excerpt">
+            In September 2025, I embarked on a transformative 10-day Vipassana meditation retreat. 
+            This article shares my experiences, challenges, and the profound insights I gained during this silent journey.
+          </p>
+          <div class="blog-tags">
+            <span class="tag personal">Personal Growth</span>
+            <span class="tag mindfulness">Mindfulness</span>
+            <span class="tag meditation">Meditation</span>
+          </div>
+          <div class="read-more">
+            Read full article →
+          </div>
+        </article>
+
+        <div class="coming-soon">
+          <h3><i class="fas fa-pen-nib"></i> More Articles Coming Soon!</h3>
+          <p>
+            I'm currently working on new content about pentesting, cybersecurity tools, 
+            and lessons learned from my life and tech journey. Stay tuned!
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <div id="footer"></div>
+  <script src="js/nevbar.js"></script>
+  <script src="js/include.js"></script>
+
+  <script>
+    // Simple filter functionality (visual only for now)
+    const filterTags = document.querySelectorAll('.filter-tag');
+    
+    filterTags.forEach(tag => {
+      tag.addEventListener('click', () => {
+        filterTags.forEach(t => t.classList.remove('active'));
+        tag.classList.add('active');
+      });
+    });
+
+    // Make articles clickable
+    document.querySelectorAll('article').forEach(article => {
+      article.style.cursor = 'pointer';
+    });
+  </script>
+</body>
+</html>

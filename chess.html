@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess | Ghanshyam Joshi</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="global.css"/>
+  <link rel="stylesheet" href="headerFooter/header.css"/>
+  <link rel="stylesheet" href="headerFooter/footer.css"/>
+  <link rel="stylesheet" href="chess/chess.css"/>
+  <!-- Chessboard.js styles -->
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+</head>
+<body>
+  <div id="header"></div>
+  <!-- CHESS SECTION -->
+  <section class="chess-widget">
+    <a href="https://www.chess.com/member/acuteimpulse" target="_blank" class="floating-play-btn"><i class="fas fa-chess"></i> Play with Me</a>
+
+    <div class="container">
+      <h2>Recent Chess Games</h2>
+      <p class="subtitle">Live feed of my latest games on Chess.com</p>
+      <div id="board" class="chessboard"></div>
+      <div id="chess-games" class="chess-games"></div>
+    </div>
+  </section>
+  <div id="footer"></div>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+  <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <script src="js/chessWidget.js"></script>
+  <script src="js/nevbar.js"></script>
+  <script src="js/include.js"></script>
+</body>
+</html>
