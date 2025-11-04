@@ -96,3 +96,75 @@
         left: -1.1rem;
       }
     }
+
+
+    .timeline {
+  border-left: 4px solid #3498db;
+  margin: 2rem 0;
+  padding-left: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  background: #3498db;
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+.company-tag {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.timeline-date {
+  display: block;
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-points {
+  list-style: disc;
+  margin-left: 1.5rem;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.timeline-points li {
+  margin-bottom: 0.6rem;
+}
+
+.role-badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+}
+
+
