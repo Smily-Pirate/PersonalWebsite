@@ -1,16 +1,5 @@
 /* --- Global Reset & Base Styles --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f5f5f5;
-}
 
 /* --- Containers & Sections --- */
 .about {
@@ -23,7 +12,7 @@ body {
   background: white;
   padding: 3rem;
   border-radius: 12px;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
 }
 
 .section {
@@ -98,6 +87,7 @@ h2 {
   display: inline-block;
 }
 
+
 /* --- About Text --- */
 .bio-text {
   font-size: 1.1rem;
@@ -129,7 +119,7 @@ h2 {
 
 .highlight-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .highlight-icon {
@@ -150,32 +140,8 @@ h2 {
 }
 
 /* --- Skills --- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
-}
 
-.skill-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
-}
 
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-}
-
-.skill-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
 
 .skill-name {
   font-weight: 600;
@@ -315,12 +281,12 @@ h2 {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 .btn.secondary {
@@ -334,6 +300,148 @@ h2 {
   color: #667eea;
 }
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #ffffff;
+  color: #333;
+}
+
+.skills-section {
+  max-width: 900px;
+  margin: 0;
+}
+
+.skills-header {
+  margin-bottom: 10px;
+}
+
+.skills-header h2 {
+  color: #1a1a1a;
+  font-size: 32px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.skills-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.skill-category {
+  margin-bottom: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.btn-skill {
+  width: 100%;
+  background: #3498db;
+  color: #333;
+  border: none;
+  padding: 18px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+.btn-skill:hover {
+  background: #f8f8f8;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  color: #666;
+}
+
+.arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.skills-grid {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  border-top: 1px solid #e0e0e0;
+}
+
+.skills-grid.show {
+  max-height: 1000px;
+}
+
+.skills-container {
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.skills-newContainer{
+  padding: 24px;
+  gap: 12px;
+}
+
+.skill-newitem{
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.2s ease;
+}
+
+.skill-item {
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #e8e8e8;
+  transition: all 0.2s ease;
+}
+
+.skill-item:hover {
+  background: #f0f0f0;
+  border-color: #d0d0d0;
+}
+
+.skill-name {
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.skill-level {
+  color: #666;
+  font-size: 13px;
+}
+
+.skill-align{
+  margin-left: 0px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-header h2 {
+    font-size: 28px;
+  }
+}
+
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
   .hero-section {
@@ -344,10 +452,6 @@ h2 {
   .profile-pic {
     width: 150px;
     height: 150px;
-  }
-
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .profiles-grid {

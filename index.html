@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-  <link rel="stylesheet" href="global.css"/>
-  <link rel="stylesheet" href="headerFooter/header.css"/>
-  <link rel="stylesheet" href="headerFooter/footer.css"/>
-  <link rel="stylesheet" href="aboutMe/index.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="headerFooter/header.css" />
+  <link rel="stylesheet" href="headerFooter/footer.css" />
+  <link rel="stylesheet" href="aboutMe/index.css" />
   <title>Ghanshyam Joshi | Portfolio</title>
 </head>
+
 <body>
   <div id="header"></div>
   <section class="about">
@@ -34,67 +36,237 @@
       <div class="section">
         <h2>About Me</h2>
         <p class="bio-text">
-          I'm a <strong>QA Engineer</strong> with a passion for penetration testing and cybersecurity. 
+          I'm a <strong>QA Engineer</strong> with a passion for penetration testing and cybersecurity.
           Currently on an exciting journey transitioning into <strong>penetration testing</strong>
           learning new skills, building projects, and documenting everything along the way.
         </p>
         <p class="bio-text">
-          I believe in continuous learning and sharing knowledge with the community. My approach 
-          combines technical expertise with a security-first mindset, always looking for ways to 
+          I believe in continuous learning and sharing knowledge with the community. My approach
+          combines technical expertise with a security-first mindset, always looking for ways to
           make systems more robust and secure.
         </p>
       </div>
 
       <!-- What I Do -->
-      <div class="section">
-        <h2>What I Do</h2>
-        <div class="highlights-grid">
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fas fa-magnifying-glass"></i></div>
-            <div class="highlight-title">Quality Assurance</div>
-            <div class="highlight-desc">
-              Ensuring software quality through rigorous testing and automation
+      <div class="skills-section">
+        <div class="skills-header">
+          <h2>What I do</h2>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-align">
+          <div class="skill-category">
+            <button class="btn-skill" data-target="quality">
+              <span>Quality Assurance</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="quality">
+              <div class="skills-newContainer">
+                <div class="skill-newitem">
+
+                  <p style="line-height: 1.8; color: #333; text-align: justify;">
+                    I provide comprehensive testing services to ensure software is reliable</strong>,
+                    <strong>secure</strong>, and <strong>user-friendly</strong>. My quality assurance expertise spans
+                    <strong>Manual Testing</strong>, where I carefully examine applications to identify bugs and verify
+                    that all features work correctly; <strong>Automation Testing</strong>, using specialized tools and
+                    frameworks to run tests faster, more accurately, and consistently; <strong>Performance
+                      Testing</strong>,
+                    evaluating how applications behave under different load conditions to ensure optimal performance;
+                    <strong>Security Testing</strong>, identifying potential vulnerabilities and risks to keep
+                    applications
+                    protected; and <strong>Usability Testing</strong>, ensuring applications are intuitive and deliver
+                    an excellent user experience. This comprehensive approach ensures quality at every level of the
+                    software development lifecycle.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fas fa-lock"></i></div>
-            <div class="highlight-title">Security Testing</div>
-            <div class="highlight-desc">
-              Learning pentesting tools like OWASP ZAP and Burp Suite
+            <button class="btn-skill" data-target="scraping">
+              <span>Web Scraping</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="scraping">
+              <div class="skills-newContainer">
+                <div class="skill-newitem">
+                  <p style="line-height: 1.8; color: #333; text-align: justify;">
+                    I specialize in <strong>web scraping</strong> and <strong>data extraction</strong> to help
+                    businesses
+                    gather valuable information from websites efficiently and accurately. My expertise includes building
+                    <strong>custom scrapers</strong> using tools like Python, Beautiful Soup, Selenium, and Scrapy to
+                    extract data from various sources; implementing <strong>automated data collection</strong> systems
+                    that run on schedules to keep information up-to-date; handling <strong>dynamic content</strong> and
+                    JavaScript-heavy websites to ensure complete data capture; performing <strong>data cleaning and
+                      transformation</strong> to deliver structured, ready-to-use datasets; and ensuring <strong>ethical
+                      scraping practices</strong> that respect robots.txt, rate limits, and website terms of service.
+                    Whether it's competitor analysis, market research, or data aggregation, I deliver reliable scraping
+                    solutions tailored to your specific needs.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fas fa-laptop-code"></i></div>
-            <div class="highlight-title">Web Scraping</div>
-            <div class="highlight-desc">
-              Building Python scripts to extract web data
+            <button class="btn-skill" data-target="development">
+              <span>Web Development</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="development">
+              <div class="skills-newContainer">
+                <div class="skill-newitem">
+                  <p style="line-height: 1.8; color: #333; text-align: justify;">
+                    I specialize in <strong>web development</strong>, creating clean and functional websites that help
+                    individuals and businesses establish their online presence. My expertise includes building
+                    <strong>personal websites</strong> that tell your story; <strong>portfolio websites</strong> that
+                    showcase your work professionally; and <strong>simple web applications</strong> with both frontend
+                    and backend functionality. I work with <strong>HTML, CSS, and JavaScript</strong> to create
+                    <strong>responsive designs</strong> that look great on any device; implementing <strong>interactive
+                      features</strong> to enhance user experience; and ensuring <strong>clean, maintainable
+                      code</strong>
+                    that's easy to update and scale. Whether you need a landing page, a personal blog, or a custom web
+                    solution, I deliver websites tailored to your specific needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-skill" data-target="security">
+              <span>Security</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="security">
+              <div class="skills-newContainer">
+                <div class="skill-newitem">
+                  <p style="line-height: 1.8; color: #333; text-align: justify;">
+                    I am expanding my expertise in <strong>cybersecurity</strong> and <strong>penetration
+                      testing</strong>
+                    to help identify vulnerabilities and strengthen system security. My growing skillset includes
+                    <strong>vulnerability assessment</strong> to identify weaknesses in applications and networks;
+                    understanding <strong>common security threats</strong> like SQL injection, XSS, and authentication
+                    flaws; learning <strong>penetration testing</strong> methodologies to evaluate system defenses;
+                    exploring <strong>security testing tools</strong> used in the industry; and applying
+                    <strong>secure coding practices</strong> to build more resilient software. Leveraging my QA
+                    background,
+                    I approach security testing with a quality-focused mindset to help protect applications from
+                    potential
+                    threats.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-  
-      <div class="section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fab fa-python"></i></div>
-            <div class="skill-name">Python</div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-database"></i></div>
-            <div class="skill-name">SQL</div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-magnifying-glass"></i></div>
-            <div class="skill-name">QA</div>
-          </div>
-          <div class="skill-card">
-            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
-            <div class="skill-name">Bash</div>
+
+      <!-- Skills and Technologies-->
+      <div class="skills-section">
+        <div class="skills-header">
+          <h2>Skills & Technologies</h2>
+          <p>Click on any category to view details</p>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-align">
+          <div class="skill-category">
+            <button class="btn-skill" data-target="qa">
+              <span>Quality Assurance</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="qa">
+              <div class="skills-container">
+                <div class="skill-item">
+                  <div class="skill-name">Manual Testing</div>
+                  <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Test Cases</div>
+                  <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Automation</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">API Testing</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Security Testing</div>
+                  <div class="skill-level">Basic</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Burp suite</div>
+                  <div class="skill-level">Basic</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Owasp ZAP</div>
+                  <div class="skill-level">Basic</div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-skill" data-target="programming">
+              <span>Programming Languages</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="programming">
+              <div class="skills-container">
+                <div class="skill-item">
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Python</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+            </div>
+            <button class="btn-skill" data-target="dbms">
+              <span>DBMS</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="dbms">
+              <div class="skills-container">
+                <div class="skill-item">
+                  <div class="skill-name">SQL</div>
+                  <div class="skill-level">Advanced</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Postgres</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Mysql</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn-skill" data-target="devtools">
+              <span>Development Tools</span>
+              <span class="arrow">▼</span>
+            </button>
+            <div class="skills-grid" id="devtools">
+              <div class="skills-container">
+                <div class="skill-item">
+                  <div class="skill-name">Git</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">GitHub</div>
+                  <div class="skill-level">Intermediate</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Jenkins</div>
+                  <div class="skill-level">Basic</div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name">Docker</div>
+                  <div class="skill-level">Basic</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
 
       <!-- Coding Profiles -->
       <div class="section">
@@ -114,7 +286,8 @@
             <div class="profile-desc">
               Practicing coding challenges and certifications
             </div>
-            <a href="https://www.hackerrank.com/profile/ghanshyamjoshi51" target="_blank" class="profile-link">View Profile</a>
+            <a href="https://www.hackerrank.com/profile/ghanshyamjoshi51" target="_blank" class="profile-link">View
+              Profile</a>
           </div>
           <div class="profile-card github">
             <div class="profile-icon"><i class="fab fa-github"></i></div>
@@ -150,7 +323,7 @@
           Interested in collaborating or just want to chat about tech and security?
         </p>
         <div class="cta-buttons">
-          <a href="assets/GhanshyamJoshi_CV.pdf" class="btn" download>Download Resume</a>
+          <!-- <a href="assets/GhanshyamJoshi_CV.pdf" class="btn" download>Download Resume</a> -->
           <a href="contact.html" class="btn secondary">Get in Touch</a>
           <a href="projects.html" class="btn secondary">View Projects</a>
         </div>
@@ -161,5 +334,20 @@
   <script src="js/nevbar.js"></script>
   <script src="js/include.js"></script>
   <!-- <script src="js/nevbar.js"></script> -->
+  <script>
+    const buttons = document.querySelectorAll('.btn-skill');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        const targetId = this.getAttribute('data-target');
+        const grid = document.getElementById(targetId);
+        const arrow = this.querySelector('.arrow');
+
+        grid.classList.toggle('show');
+        arrow.classList.toggle('rotate');
+      });
+    });
+  </script>
 </body>
+
 </html>
