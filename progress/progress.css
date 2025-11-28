@@ -73,6 +73,7 @@
      border-radius: 8px;
      border-left: 4px solid #3498db;
      transition: transform 0.2s, box-shadow 0.2s;
+     
    }
 
    .goal-item:hover,
@@ -138,6 +139,7 @@
      color: #3498db;
      font-weight: 600;
      margin-top: 0.25rem;
+     text-decoration: none;
    }
 
    .checkbox {
